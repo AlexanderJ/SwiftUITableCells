@@ -131,6 +131,8 @@ class HostingCell: UITableViewCell, ObservableObject {
     }
 }
 #else
+// this version is based on
+// https://noahgilmore.com/blog/swiftui-self-sizing-cells/
 final class HostingCell<Content: View>: UITableViewCell {
     private let hostingController = UIHostingController<Content?>(rootView: nil)
 
