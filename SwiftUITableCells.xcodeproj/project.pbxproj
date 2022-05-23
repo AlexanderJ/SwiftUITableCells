@@ -16,6 +16,7 @@
 		FA1F7FF4282D944F00398588 /* SwiftUITableCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F7FF3282D944F00398588 /* SwiftUITableCellsTests.swift */; };
 		FA1F7FFE282D944F00398588 /* SwiftUITableCellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F7FFD282D944F00398588 /* SwiftUITableCellsUITests.swift */; };
 		FA1F8000282D944F00398588 /* SwiftUITableCellsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F7FFF282D944F00398588 /* SwiftUITableCellsUITestsLaunchTests.swift */; };
+		FA1F800D282D9D3F00398588 /* TableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F800C282D9D3F00398588 /* TableCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FA1F7FF9282D944F00398588 /* SwiftUITableCellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITableCellsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1F7FFD282D944F00398588 /* SwiftUITableCellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITableCellsUITests.swift; sourceTree = "<group>"; };
 		FA1F7FFF282D944F00398588 /* SwiftUITableCellsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITableCellsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA1F800C282D9D3F00398588 /* TableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FA1F7FDC282D944B00398588 /* AppDelegate.swift */,
 				FA1F7FDE282D944B00398588 /* SceneDelegate.swift */,
 				FA1F7FE0282D944B00398588 /* ViewController.swift */,
+				FA1F800C282D9D3F00398588 /* TableCellView.swift */,
 				FA1F7FE2282D944B00398588 /* Main.storyboard */,
 				FA1F7FE5282D944F00398588 /* Assets.xcassets */,
 				FA1F7FE7282D944F00398588 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1F7FE1282D944B00398588 /* ViewController.swift in Sources */,
+				FA1F800D282D9D3F00398588 /* TableCellView.swift in Sources */,
 				FA1F7FDD282D944B00398588 /* AppDelegate.swift in Sources */,
 				FA1F7FDF282D944B00398588 /* SceneDelegate.swift in Sources */,
 			);
@@ -450,6 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DUseMyHostingCell";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaehrling.SwiftUITableCells;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -478,6 +483,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DUseMyHostingCell";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaehrling.SwiftUITableCells;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
